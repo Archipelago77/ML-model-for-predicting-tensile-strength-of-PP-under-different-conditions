@@ -22,10 +22,6 @@ The project compares three approaches:
   - Trains **linear regression** and **random forest** models  
   - Reports MAE / RMSE / R² for both models  
   - Computes random-forest feature importance  
-  - Generates figures for:
-    - Predicted vs. actual tensile strength (linear regression)  
-    - Predicted vs. actual tensile strength (random forest)  
-    - Random forest feature importances  
 
 - `Step_5_Apply_huggingfaceHF_model.py`  
   Script that:
@@ -33,25 +29,10 @@ The project compares three approaches:
   - Prepares a simple text-based representation or tabular input for a HuggingFace model  
   - Fine-tunes a **DistilBERT** model for regression using the `transformers` Trainer API  
   - Evaluates the model (MAE, RMSE, R²) on the test set  
-  - Optionally saves predictions and a **predicted vs. actual** figure for the transformer model  
 
-- `fig_linreg_pred_vs_actual.png`  
-  Predicted vs. actual tensile strength for linear regression.
 
-- `fig_rf_feature_importance.png`  
-  Random forest feature importances for the most influential features (e.g., glass fiber wt%, recycling cycles, etc.).
-
-- `fig_rf_pred_vs_actual.png`  
-  Predicted vs. actual tensile strength for the random forest model.
-
-- `fig_hf_pred_vs_actual.png` *(optional, if generated)*  
-  Predicted vs. actual tensile strength for the fine-tuned DistilBERT model.
-
-- `code_link.txt`  
-  A text file containing the public GitHub URL of this repository for submission.
-
-- `data/` *(recommended – see below)*  
-  Folder for the dataset files (e.g., `507 final project data-2.xlsx` and/or a cleaned CSV/Excel file).
+- `data/` 
+  Folder for the dataset files (i.e., `507 final project data-2.xlsx` and/or a cleaned CSV/Excel file).
 
 ---
 
@@ -66,10 +47,11 @@ The models are trained on a curated dataset compiled from published literature t
 
 Each record includes at least:
 
-- `recycle_cycles`  
-- polymer grade and processing method  
+- recycle_cycles
+- polymer grade
+- processing method  
 - weight fractions of PP, glass fiber, talc, and various contaminants  
-- measured `tensile_strength_MPa`
+- measured/reported tensile_strength_MPa
 
 **Recommended layout:**
 
