@@ -31,10 +31,6 @@ The project compares three approaches:
   - Evaluates the model (MAE, RMSE, R²) on the test set  
 
 
-- `data/` 
-  Folder for the dataset files (i.e., `507 final project data-2.xlsx` and/or a cleaned CSV/Excel file).
-
----
 
 ## Data
 
@@ -53,9 +49,6 @@ Each record includes at least:
 - weight fractions of PP, glass fiber, talc, and various contaminants  
 - measured/reported tensile_strength_MPa
 
-**Recommended layout:**
-
-```text
-data/
+Two datasets used for the project can also be found in this repo:
     507_final_project_data-2.xlsx        # original curated dataset
-    model_ready_matrix.csv               # optional: cleaned / encoded matrix used in models
+    model_ready_matrix.xlsx              # cleaned / encoded matrix used in models
